@@ -31,3 +31,27 @@ header {
   margin: 40px 0;
   text-align: center;
 }
+
+.pokemon-item {
+  float: left;
+  margin: 10px;
+}
+.pokemon-item a {
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  text-transform: capitalize;
+}
+
+.pokemon-item a:hover {
+  color: #3B4CCA;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 45px);
+  grid-gap: 15px;
+  list-style: none;
+}

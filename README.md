@@ -8,3 +8,4 @@ Possible Features to Add:
 - add pokemon sounds upon selection
 - add pokemon background music
 - host website on git pages
+- when showing individual pokemon, search is either below pokemon or results will display above pokemon

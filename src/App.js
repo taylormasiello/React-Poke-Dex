@@ -1,4 +1,6 @@
 import logo from './pokeLogo.png';
+import pokemonData from "./pokeapi.json";
+import React, { useState } from "react";
 import './App.css';
 
 function App() {

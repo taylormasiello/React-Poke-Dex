@@ -31,7 +31,9 @@ function App() {
 
       <main>
         <div className="search-container">
-          <input className="search-box" type="text" placeholder="Search..." />
+          {/*searchTerm: state variable set as value of the input field; onChange event handler updates searchTerm when user types into input field; 2-way data binding created*/}
+          <input className="search-box" type="text" placeholder="Search..."
+            value={searchTerm} onChange={event => setSearchTerm(event.target.value)} />
           </div>
 
           {/* selectedPokemon && so that the line {{ selectedPokemon.name }} doesn't throw an error for trying to access a property that doesn't exist on the object selectedPokemon */
@@ -40,7 +42,7 @@ function App() {
             <div className="pokemon-details">
               <h2>{selectedPokemon.name}</h2>
               <img
-                src={selectedPokemon.sprites.font_default}
+                src={selectedPokemon.sprites.front_default}
                 alt={selectedPokemon.name}
               />
               <p>Height: {selectedPokemon.height}</p>

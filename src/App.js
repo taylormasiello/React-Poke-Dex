@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import logo from './pokeLogo.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <img alt="pokeLogo" className="logo" src={logo} />
       </header>
+
+      <main>
+        <div className="search-container">
+          <input className="search-box" type="text" placeholder="Search..." />
+        </div>
+      </main>
     </div>
   );
 }

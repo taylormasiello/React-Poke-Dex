@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
   {/* useState: React Hook that enables update to a certain variable */}
-  const [pokemonList, setPokemonList] = useState(pokemonData.results);
+  const [pokemonList] = useState(pokemonData.results);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedPokemon, setSelectedPokemon] = useState(null);
 
